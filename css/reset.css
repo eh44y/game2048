@@ -1,0 +1,35 @@
+*{
+  margin: 0; padding: 0;
+  color: inherit;
+  /* font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; */
+  font-family: "나눔바른펜", "nanum-barun-pen";
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: inherit;
+}
+li{list-style: none;} /* list 앞의 점 없앰 */
+table{
+  /* cell 간격 */
+  border-spacing: 0;
+  /* 선 겹침 */
+  border-collapse: collapse;
+}
+input,select,textarea,button{
+  /* 테두리와 패딩크기를 크기 안으로 설정 */
+  box-sizing: border-box;
+}
+.hidden{
+  position: fixed; top: -10000px;
+}
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+button{
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

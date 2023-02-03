@@ -1,0 +1,170 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #d2d4e5;
+}
+
+#game2048 {
+  width: 450px;
+  padding: 50px;
+  background: #faf8ef;
+}
+
+#game2048 .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#game2048 .wrap #title {
+  margin-left: 5%;
+  vertical-align: center;
+  font-size: 75px;
+  font-weight: bold;
+  color: #776e65;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#game2048 .wrap .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#game2048 .wrap .info .score_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #776e65;
+  background: #bbada0;
+}
+
+#game2048 .wrap .info .score_area .scoreTxt {
+  text-align: center;
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#game2048 .wrap .info .score_area .score {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#game2048 .wrap .info .back {
+  margin-top: 30px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #f9f6f2;
+  background: #8f7a66;
+}
+
+#game2048 #board {
+  margin-top: 50px;
+}
+
+#game2048 #board tr td {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100px;
+  height: 100px;
+  border: 10px solid #bbada0;
+  border-radius: 9px;
+  vertical-align: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+#game2048 #board tr td.color-2 {
+  background-color: #eee4da;
+  color: #776e65;
+}
+
+#game2048 #board tr td.color-4 {
+  background-color: #eee1c9;
+  color: #776e65;
+}
+
+#game2048 #board tr td.color-8 {
+  background-color: #f3b27a;
+  color: #fff;
+}
+
+#game2048 #board tr td.color-16 {
+  background-color: #f69664;
+  color: #fff;
+}
+
+#game2048 #board tr td.color-32 {
+  background-color: #f77c5f;
+  color: #fff;
+}
+
+#game2048 #board tr td.color-64 {
+  background-color: #f75f3b;
+  color: #fff;
+}
+
+#game2048 #board tr td.color-128 {
+  background-color: #edd073;
+  color: #776e65;
+}
+
+#game2048 #board tr td.color-256 {
+  background-color: #edcc62;
+  color: #776e65;
+}
+
+#game2048 #board tr td.color-512 {
+  background-color: #edc950;
+  color: #776e65;
+}
+
+#game2048 #board tr td.color-1024 {
+  background-color: #edc53f;
+  color: #776e65;
+}
+
+#game2048 #board tr td.color-2048 {
+  background-color: #edc22e;
+  color: #776e65;
+}
+/*# sourceMappingURL=game2048.css.map */

@@ -1,0 +1,85 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #d2d4e5;
+}
+
+#game2048{
+  width: 450px;
+  padding: 50px;
+  background: #faf8ef;
+  .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #title{
+      margin-left: 5%;
+      vertical-align: center;
+      font-size: 75px;
+      font-weight: bold;
+      color: #776e65;
+      user-select: none;
+    }
+    .info{
+      display: flex;
+      flex-direction: column;
+      .score_area{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 15px;
+        border-radius: 10px;
+        color: #776e65;
+        background: #bbada0;
+        .scoreTxt{
+          text-align: center;
+          font-size: 14px;
+          user-select: none;
+        } // .scoreTxt
+        .score{
+          user-select: none;
+          font-size: 30px;
+          font-weight: bold;
+          text-align: center;
+        } // .score
+      } // score_area
+      .back{
+        margin-top: 30px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        color: #f9f6f2;
+        background: #8f7a66;
+
+      } // back
+    } // .info
+  } // .wrap
+  #board{
+    margin-top: 50px;
+    tr{
+      td{
+        user-select: none;
+        width: 100px;
+        height: 100px;
+        border: 10px solid #bbada0;
+        border-radius: 9px;
+        vertical-align: center;
+        text-align: center;
+        font-weight: bold;
+        font-size: 48px;
+        &.color-2{background-color: #eee4da; color: #776e65;}
+        &.color-4{background-color: #eee1c9; color: #776e65;}
+        &.color-8{background-color: #f3b27a; color: #fff;}
+        &.color-16{background-color: #f69664; color: #fff;}
+        &.color-32{background-color: #f77c5f; color: #fff;}
+        &.color-64{background-color: #f75f3b; color: #fff;}
+        &.color-128{background-color: #edd073; color: #776e65;}
+        &.color-256{background-color: #edcc62; color: #776e65;}
+        &.color-512{background-color: #edc950; color: #776e65;}
+        &.color-1024{background-color: #edc53f; color: #776e65;}
+        &.color-2048{background-color: #edc22e; color: #776e65;}
+      } // td
+    } // tr
+  } //  #board
+} // #game2048
